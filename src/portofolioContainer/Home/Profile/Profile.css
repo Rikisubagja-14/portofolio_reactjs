@@ -1,0 +1,161 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-width: fit-content;
+    /* background-image: url('../assets//Home/bg.jpg'); */
+    
+}
+
+.profile-parent {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.profile-details-name {
+    font-size: 24px;
+
+}
+
+.profile-details-role {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1 {
+    font-size: 24px;
+}
+
+.primary-text {
+    color: white;
+}
+
+.highlighted-text {
+    color: rgb(27, 25, 37);
+}
+
+.profile-role-tagline {
+    font: size 19px;
+    margin: 5px 0 0 0;
+}
+
+.profile-optins .highlighted-btn {
+    margin: 0 0 0 28px;
+}
+
+.profile-optins .highlighted-btn:hover {
+    margin: 0 0 0 25px;
+    background-color: cornsilk;
+    color: #111;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px white;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+}
+
+.profile-picture-backround {
+    height: 92%;
+    width: 92%;
+    border-radius: 50%;
+    background-image: url('../../assets/Home/rikipf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-picture-backround:hover {
+    transform: scale(1.07);
+    transition: 1 ease-out;
+}
+
+.colz .colz-icon i {
+    color: white;
+    padding: 8px;
+    padding-left: 0px;
+}
+
+.colz .colz-icon i:hover {
+    transform: scale(1.07);
+    transition: 1 ease-out;
+}
+
+@media screen and (max-width:1110px) {
+    .profile-picture {
+        margin: 0 0px 0 80px
+    }
+
+    .profile-details-name {
+        font-size: 20px;
+    }
+
+    .profile-details-role .primary-text {
+        font-size: 12px;
+    }
+
+    .profile-optins .btn {
+        width: 120px;
+        padding: 11px;
+        z-index: 700;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .profile-picture {
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .profile-picture {
+        margin: 0 !important;
+    }
+
+    .profile-parent {
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+
+    .profile-optins {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-details {
+        margin: 25px 0 0;
+    }
+
+    .profile-optins .highlighted-btn {
+        margin: 0;
+    }
+
+    .profile-optins,
+    .profile-details-role {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .profile-picture {
+        height: 270px;
+        width: 270px;
+        margin-top: -90;
+    }
+
+    .profile-details {
+        width: 90%;
+    }
+}
